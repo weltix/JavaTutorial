@@ -1,0 +1,3 @@
+#PersistentEcho properties
+#Mon Jan 15 07:37:48 EET 2018
+argString=One Two Three

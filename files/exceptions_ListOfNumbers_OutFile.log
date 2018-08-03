@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927494</millis>
+  <sequence>0</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>open0</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927634</millis>
+  <sequence>1</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>open</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927635</millis>
+  <sequence>2</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>&lt;init&gt;</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927637</millis>
+  <sequence>3</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>&lt;init&gt;</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927643</millis>
+  <sequence>4</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>&lt;init&gt;</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927644</millis>
+  <sequence>5</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>writeList</message>
+</record>
+<record>
+  <date>2017-12-15T22:15:27</date>
+  <millis>1513368927649</millis>
+  <sequence>6</sequence>
+  <logger>package.name</logger>
+  <level>WARNING</level>
+  <class>com.weltix.java.tutorial.exceptions.ListOfNumbers</class>
+  <method>writeList</method>
+  <thread>1</thread>
+  <message>main</message>
+</record>
+</log>
