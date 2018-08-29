@@ -11,7 +11,7 @@ public class FileList {
         final int assumedLineLength = 50;
         File file = new File(args[0]);
         List<String> fileList =
-                new ArrayList<String>((int)(file.length() / assumedLineLength) * 2);
+                new ArrayList<String>((int) (file.length() / assumedLineLength) * 2);
         BufferedReader reader = null;
         int lineCount = 0;
         try {
@@ -28,7 +28,8 @@ public class FileList {
             if (reader != null) {
                 try {
                     reader.close();
-                } catch (IOException e) {}
+                } catch (IOException e) {
+                }
             }
         }
         int repeats = Integer.parseInt(args[1]);

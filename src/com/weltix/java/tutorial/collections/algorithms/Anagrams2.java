@@ -19,9 +19,13 @@ public class Anagrams2 {
             while (s.hasNext()) {
                 String word = s.next();
                 String alpha = alphabetize(word);
-                List<String> l = m.get(alpha);
-                if (l == null)
-                    m.put(alpha, l=new ArrayList<String>());
+//                List<String> l = m.get(alpha);
+//                if (l == null)
+//                    m.put(alpha, l = new ArrayList<>());
+                // lets use lambda expression instead of above code
+                List<String> l = m.computeIfAbsent(alpha,
+                        stringKey -> new ArrayList<>()
+                );
                 l.add(word);
             }
         } catch (IOException e) {
