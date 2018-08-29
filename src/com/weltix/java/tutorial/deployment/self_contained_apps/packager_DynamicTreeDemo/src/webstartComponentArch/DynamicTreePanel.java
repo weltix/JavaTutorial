@@ -9,6 +9,8 @@ package com.weltix.java.tutorial.deployment.self_contained_apps.packager_Dynamic
  * a tutorial reader.
  */
 
+import com.weltix.java.tutorial.deployment.self_contained_apps.packager_DynamicTreeDemo.src.webstartComponentArch.DynamicTree;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.GridLayout;

@@ -1,7 +1,9 @@
 /*
  * Copyright (c) 26.08.2018, DMITRIY BLUDOV. All rights reserved.
  */ 
-package com.weltix.java.tutorial.deployment.self_contained_apps.packager_DynamicTreeDemo.src.webstartComponentArch;
+package webstartComponentArch;
+
+import com.weltix.java.tutorial.deployment.self_contained_apps.packager_DynamicTreeDemo.src.webstartComponentArch.DynamicTreePanel;
 
 import javax.swing.JFrame;
 
