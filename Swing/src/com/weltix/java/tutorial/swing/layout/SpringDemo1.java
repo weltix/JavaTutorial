@@ -1,29 +1,13 @@
-package com.weltix.java.tutorial.swing.layout;
-
 /*
- * BoxLayoutDemo.java requires no other files.
+ * Copyright (c) 30.05.2019, DMITRIY BLUDOV. All rights reserved.
  */
+
+package com.weltix.java.tutorial.swing.layout;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class BoxLayoutDemo {
-    public static void addComponentsToPane(Container pane) {
-        pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
-
-        addAButton("Button 1", pane);
-        addAButton("Button 2", pane);
-        addAButton("Button 3", pane);
-        addAButton("Long-Named Button 4", pane);
-        addAButton("5", pane);
-    }
-
-    private static void addAButton(String text, Container container) {
-        JButton button = new JButton(text);
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        container.add(button);
-    }
-
+public class SpringDemo1 {
     /**
      * Create the GUI and show it.  For thread safety,
      * this method should be invoked from the
@@ -31,11 +15,15 @@ public class BoxLayoutDemo {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("BoxLayoutDemo");
+        JFrame frame = new JFrame("SpringDemo1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Set up the content pane.
-        addComponentsToPane(frame.getContentPane());
+        Container contentPane = frame.getContentPane();
+        SpringLayout layout = new SpringLayout();
+        contentPane.setLayout(layout);
+        contentPane.add(new JLabel("Label: "));
+        contentPane.add(new JTextField("Text field", 15));
 
         //Display the window.
         frame.pack();

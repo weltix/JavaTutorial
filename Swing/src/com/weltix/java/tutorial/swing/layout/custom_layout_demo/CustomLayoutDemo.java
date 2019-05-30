@@ -1,27 +1,26 @@
-package com.weltix.java.tutorial.swing.layout;
+/*
+ * Copyright (c) 30.05.2019, DMITRIY BLUDOV. All rights reserved.
+ */
+
+package com.weltix.java.tutorial.swing.layout.custom_layout_demo;
 
 /*
- * BoxLayoutDemo.java requires no other files.
+ * CustomLayoutDemo.java requires one other file:
+ *   DiagonalLayout.java
  */
 
 import javax.swing.*;
 import java.awt.*;
 
-public class BoxLayoutDemo {
+public class CustomLayoutDemo {
     public static void addComponentsToPane(Container pane) {
-        pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
+        pane.setLayout(new DiagonalLayout());
 
-        addAButton("Button 1", pane);
-        addAButton("Button 2", pane);
-        addAButton("Button 3", pane);
-        addAButton("Long-Named Button 4", pane);
-        addAButton("5", pane);
-    }
-
-    private static void addAButton(String text, Container container) {
-        JButton button = new JButton(text);
-        button.setAlignmentX(Component.CENTER_ALIGNMENT);
-        container.add(button);
+        pane.add(new JButton("Button 1"));
+        pane.add(new JButton("Button 2"));
+        pane.add(new JButton("Button 3"));
+        pane.add(new JButton("Button 4"));
+        pane.add(new JButton("Button 5"));
     }
 
     /**
@@ -31,7 +30,7 @@ public class BoxLayoutDemo {
      */
     private static void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("BoxLayoutDemo");
+        JFrame frame = new JFrame("CustomLayoutDemo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Set up the content pane.
