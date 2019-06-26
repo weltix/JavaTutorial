@@ -131,8 +131,8 @@ public class IconDemoApp extends JFrame {
 
     /**
      * Creates an ImageIcon if the path is valid.
-     * @param String - resource path
-     * @param String - description of the file
+     * @param path - resource path
+     * @param description - description of the file
      */
     protected ImageIcon createImageIcon(String path,
                                         String description) {
@@ -172,9 +172,9 @@ public class IconDemoApp extends JFrame {
         private Icon displayPhoto;
 
         /**
-         * @param Icon - The full size photo to show in the button.
-         * @param Icon - The thumbnail to show in the button.
-         * @param String - The descriptioon of the icon.
+         * @param photo - The full size photo to show in the button.
+         * @param thumb - The thumbnail to show in the button.
+         * @param desc - The descriptioon of the icon.
          */
         public ThumbnailAction(Icon photo, Icon thumb, String desc){
             displayPhoto = photo;
