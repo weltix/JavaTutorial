@@ -8,7 +8,7 @@ package com.weltix.java.tutorial.swing.component;
  * ToolBarDemo.java requires the following addditional files:
  * images/Back24.gif
  * images/Forward24.gif
- * images/Up24.gif
+ * images/Up16.gif
  */
 
 import javax.swing.*;

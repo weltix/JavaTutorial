@@ -81,6 +81,7 @@ public class InternalFrameDemo extends JFrame
     protected void createFrame() {
         MyInternalFrame frame = new MyInternalFrame();
         frame.setVisible(true); //necessary as of 1.3
+
         desktop.add(frame);
         try {
             frame.setSelected(true);
