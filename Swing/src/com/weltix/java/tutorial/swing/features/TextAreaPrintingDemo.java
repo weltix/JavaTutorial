@@ -22,8 +22,8 @@ public class TextAreaPrintingDemo extends javax.swing.JFrame {
 
     public TextAreaPrintingDemo() {
         initComponents();
-        load(text, "assets/toprint.assets");
-        load(guideText, "assets/guide.assets");
+        load(text, "assets/toprint.txt");
+        load(guideText, "assets/guide.txt");
     }
 
     /** This method is called from within the constructor to
