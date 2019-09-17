@@ -76,7 +76,6 @@ public class SynthDialog extends JFrame {
     private static void initLookAndFeel() {
         SynthLookAndFeel lookAndFeel = new SynthLookAndFeel();
 
-
         try {
 
             // SynthLookAndFeel load() method throws a checked exception

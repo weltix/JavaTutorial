@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 12.07.2019, DMITRIY BLUDOV. All rights reserved.
+ * Copyright (c) 23.07.2019, DMITRIY BLUDOV. All rights reserved.
  */
 
 package com.weltix.java.tutorial.swing.listeners;

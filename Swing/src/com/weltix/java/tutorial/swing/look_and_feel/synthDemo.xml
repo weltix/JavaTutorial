@@ -54,7 +54,6 @@
     </style>
     <bind style="button" type="region" key="Button"/>
 
-
     <style id="checkbox">
         <imageIcon id="check_off" path="images/checkbox_off.png"/>
         <imageIcon id="check_on" path="images/checkbox_on.png"/>

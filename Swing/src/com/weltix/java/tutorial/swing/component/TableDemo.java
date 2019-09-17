@@ -17,7 +17,7 @@ import java.awt.*;
  * uses a custom TableModel.
  */
 public class TableDemo extends JPanel {
-    private boolean DEBUG = false;
+    private boolean DEBUG = true;
 
     public TableDemo() {
         super(new GridLayout(1,0));

@@ -22,18 +22,18 @@ public class Myopia {
     }
 
     public static void createUI() {
-        JFrame f = new JFrame ("Myopia");
+        JFrame f = new JFrame("Myopia");
 
         LayerUI<JComponent> layerUI = new BlurLayerUI();
         JPanel panel = createPanel();
         JLayer<JComponent> jlayer = new JLayer<JComponent>(panel, layerUI);
 
-        f.add (jlayer);
+        f.add(jlayer);
 
         f.setSize(300, 200);
-        f.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        f.setLocationRelativeTo (null);
-        f.setVisible (true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setLocationRelativeTo(null);
+        f.setVisible(true);
     }
 
     private static JPanel createPanel() {
@@ -79,7 +79,7 @@ class BlurLayerUI extends LayerUI<JComponent> {
     }
 
     @Override
-    public void paint (Graphics g, JComponent c) {
+    public void paint(Graphics g, JComponent c) {
         int w = c.getWidth();
         int h = c.getHeight();
 
@@ -100,7 +100,7 @@ class BlurLayerUI extends LayerUI<JComponent> {
         super.paint(ig2, c);
         ig2.dispose();
 
-        Graphics2D g2 = (Graphics2D)g;
+        Graphics2D g2 = (Graphics2D) g;
         g2.drawImage(mOffscreenImage, mOperation, 0, 0);
     }
 }

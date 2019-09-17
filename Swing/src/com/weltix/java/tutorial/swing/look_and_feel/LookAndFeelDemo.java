@@ -33,7 +33,6 @@ public class LookAndFeelDemo implements ActionListener {
     // Valid values are: "DefaultMetal", "Ocean",  and "Test"
     final static String THEME = "Test";
 
-
     public Component createComponents() {
         JButton button = new JButton("I'm a Swing button!");
         button.setMnemonic(KeyEvent.VK_I);
@@ -72,7 +71,6 @@ public class LookAndFeelDemo implements ActionListener {
                 //  an alternative way to set the Metal L&F is to replace the
                 // previous line with:
                 // lookAndFeel = "javax.swing.plaf.metal.MetalLookAndFeel";
-
             }
 
             else if (LOOKANDFEEL.equals("System")) {
@@ -94,12 +92,8 @@ public class LookAndFeelDemo implements ActionListener {
             }
 
             try {
-
-
                 UIManager.setLookAndFeel(lookAndFeel);
-
                 // If L&F = "Metal", set the theme
-
                 if (LOOKANDFEEL.equals("Metal")) {
                     if (THEME.equals("DefaultMetal"))
                         MetalLookAndFeel.setCurrentTheme(new DefaultMetalTheme());
@@ -107,13 +101,8 @@ public class LookAndFeelDemo implements ActionListener {
                         MetalLookAndFeel.setCurrentTheme(new OceanTheme());
                     else
                         MetalLookAndFeel.setCurrentTheme(new TestTheme());
-
                     UIManager.setLookAndFeel(new MetalLookAndFeel());
                 }
-
-
-
-
             }
 
             catch (ClassNotFoundException e) {

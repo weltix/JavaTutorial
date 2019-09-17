@@ -18,7 +18,7 @@ import java.awt.*;
  * custom cell editor to validate integer input.
  */
 public class TableFTFEditDemo extends JPanel {
-    private boolean DEBUG = false;
+    private boolean DEBUG = true;
 
     public TableFTFEditDemo() {
         super(new GridLayout(1,0));
